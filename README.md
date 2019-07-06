@@ -19,6 +19,17 @@ This is a prototype for the web application we are currently trying to work on, 
 
 ## PROBLEMS/THINGS WE NEED HELP WITH:
 
+Some of the problems we are facing are: 
+* Finding a way to actually use the camera to analyze the users BPM
+    * One of the two approaches to this problem is using JavaScript to take pictures and store them so that we can use        Python/Flask backend on the server side to analyze pictures we have taken. To learn more on how this might work, you can speak to the researchers on our team. 
+    * The second approach would be to replicate the code we have in python already and write it up in JavaScript so we can do everything on the client side, since python cannot be run on the client side. (Insert link to python code and unity)
+* The first method brings up another issue we are having which is setting Up Python and Flask
+    *To use python with a database a web framework must be implemented. We tried implementing flask but were not able to since the python file was too complex. We need someone to help us with that portion since we are stuck on it. 
+* Help Setting up Database
+    * Use the Google Firebase to store images (from client side) and sent back to the server side to be analyzed (if we use python code)
+
+
+
 
 - [ ]
 - [ ]
@@ -29,7 +40,18 @@ This is a prototype for the web application we are currently trying to work on, 
 - [ ]
 
 
-## Need To Modify/Finish:
+## Task We Are Still Working On, Need To Modify/Finish:
+[ ] Results Page
+  * Two Column Layout: 
+    * First showing the result of preferences   
+    * Second showing the BPM for each color
+[ ] Modify Preference/Questions Page: “Which Color Did YOU Find Most Calming”
+  * Want to store the users answers so we can preview them in the results page
+[ ] User Authentication
+  * Users can login using their Google account
+  * Users can create new user credentials 
 
 
+
+**We will further update the readme with updates, also if things are not too clear to understand at the moment. We will update the readme to include the link to the desktop version of the site where you will be able to view the python code**
 
