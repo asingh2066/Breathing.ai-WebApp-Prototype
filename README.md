@@ -31,25 +31,19 @@ Some of the problems we are facing are:
 
 
 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+
 
 
 ## Task We Are Still Working On, Need To Modify/Finish:
-[ ] Results Page
+- [ ] Results Page
   * Two Column Layout: 
     * First showing the result of preferences   
     * Second showing the BPM for each color
-[ ] Modify Preference/Questions Page: “Which Color Did YOU Find Most Calming”
-  * Want to store the users answers so we can preview them in the results page
-[ ] User Authentication
-  * Users can login using their Google account
-  * Users can create new user credentials 
+- [ ] Modify Preference/Questions Page: “Which Color Did YOU Find Most Calming”
+   * Want to store the users answers so we can preview them in the results page
+- [ ] User Authentication
+   * Users can login using their Google account
+   * Users can create new user credentials 
 
 
 
