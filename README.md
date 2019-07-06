@@ -1,7 +1,7 @@
 # Breathing.ai-Website-Prototype
 This is a rough draft for the web application that will allow users to detect and view their heart-rate based on colors and fonts they observe
 
-=========================
+=============
 
 
 This is a prototype for the web application we are currently trying to work on, the prototype is not fully complete and is a mockup of what the actual one should look and behave like. There are several functionalities that still need to be added, for some of these tasks we require additional assistance. These problems will be addressed later on in the README, for now we will go through what we have and how the actual application should work.
