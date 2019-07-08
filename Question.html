@@ -1,5 +1,6 @@
 <html>
-<link rel="stylesheet" type="text/css" href="css/questions.css" />
+
+
 <body>
 <center>
   <div class="container">
@@ -24,12 +25,14 @@
     <p>Yellow: <span id="demo5" class= "value"></span></p> <br> <br>
     <input type="range" min="1" max="5" value="1" id="myRange5" class="slider">
 
+    <link rel="stylesheet" type="text/css" href="css/questions.css" />
   </div>
 </center>
 
 
-<form action="page2.html">
-    <input type="submit" value="Next Page" />
+<form action="Results.html">
+    <input type="submit" value="Next Page" onclick= "Passvalue();"/>
+
 </form>
 </body>
 
@@ -79,12 +82,14 @@
         }
 
 
-
+function Passvalue(){
         localStorage.setItem("value1", slider.value);
         localStorage.setItem("value2", slider2.value);
         localStorage.setItem("value3", slider3.value);
         localStorage.setItem("value4", slider4.value);
         localStorage.setItem("value5", slider5.value);
+        return false;
+      }
 
   </script>
 </html>
