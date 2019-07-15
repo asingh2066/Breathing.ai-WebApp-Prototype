@@ -60,21 +60,21 @@ p {
 }
 
 #myRange::-webkit-slider-thumb{
-  background: #e74c3c;
+  background: #0000FF;
 }
 
 #myRange2::-webkit-slider-thumb{
-  background: #2F9B4C;
+  background: #FF0000;
 }
 
 #myRange3::-webkit-slider-thumb{
-  background: #3277EF;
+  background: #FFFF00;
 }
 
 #myRange4::-webkit-slider-thumb{
-  background: gray;
+  background: #00FF00;
 }
 
 #myRange5::-webkit-slider-thumb{
-  background: yellow;
+  background: #999999;
 }

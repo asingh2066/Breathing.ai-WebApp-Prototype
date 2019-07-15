@@ -21,7 +21,7 @@ body {
   display: flex;
   height: 450px;
   width: 400px;
-  opacity: .9;
+  opacity: .95;
   background-color: #FFF;
   border-radius: 10px;
   box-shadow: -1rem 0 10rem #000000;

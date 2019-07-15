@@ -8,6 +8,7 @@
   position: relative;
 }
 
+/* change the ring around the circle */
 .ch-item-1 {
 	width: 128%;
 	height: 128%;
@@ -17,8 +18,8 @@
 	position: relative;
 	cursor: default;
 	box-shadow:
-		inset 0 0 0 0 rgba(200,95,66, 0.4),
-		inset 0 0 0 16px rgba(255,255,255,0.6),
+		inset 0 0 0 0 rgba(200,95,66, 0.3),
+		inset 0 0 0 16px rgba(255,255,255,.3),
 		0 1px 2px rgba(0,0,0,0.1);
 
 	-webkit-transition: all 0.4s ease-in-out;
@@ -36,8 +37,8 @@
 	position: relative;
 	cursor: default;
 	box-shadow:
-		inset 0 0 0 0 rgba(200,95,66, 0.4),
-		inset 0 0 0 16px rgba(255,255,255,0.6),
+		inset 0 0 0 0 rgba(200,95,66, 0.3),
+		inset 0 0 0 16px rgba(255,255,255,0.3),
 		0 1px 2px rgba(0,0,0,0.1);
 
 	-webkit-transition: all 0.4s ease-in-out;
@@ -55,8 +56,8 @@
 	position: relative;
 	cursor: default;
 	box-shadow:
-		inset 0 0 0 0 rgba(200,95,66, 0.4),
-		inset 0 0 0 16px rgba(255,255,255,0.6),
+		inset 0 0 0 0 rgba(200,95,66, 0.3),
+		inset 0 0 0 16px rgba(255,255,255,0.3),
 		0 1px 2px rgba(0,0,0,0.1);
 
 	-webkit-transition: all 0.4s ease-in-out;
@@ -67,16 +68,17 @@
 }
 
 .ch-img-1 {
-	background-image: url(../images/breath.jpg);
+	background-image: url(../images/stepone.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: 150px;
   position: relative;
 	opacity: 0.5;
 }
 
 .ch-img-2 {
-	background-image: url(../images/good.jpg);
+	background-image: url(../images/steptwo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,7 +87,7 @@
 }
 
 .ch-img-3 {
-	background-image: url(../images/peace.jpg);
+	background-image: url(../images/breathing.ai_three.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,7 +100,7 @@
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	opacity: 0;
+	opacity: 1;
 
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
@@ -118,6 +120,7 @@
 
 .ch-info h3 {
 	color: #fff;
+  opacity: 1;
 	text-transform: uppercase;
 	position: relative;
 	letter-spacing: 2px;
@@ -135,6 +138,7 @@ h1 {
 	color: #fff;
 	text-transform: uppercase;
 	position: relative;
+  opacity: 1;
 	letter-spacing: 2px;
 	font-size: 50px;
 	margin: 0 30px;
@@ -149,10 +153,11 @@ h1 {
 
 .ch-info p {
 	color: #fff;
+  opacity: 1;
 	padding: 10px 5px;
 	font-style: italic;
 	margin: 0 30px;
-	font-size: 22px;
+	font-size: 21px;
 	border-top: 1px solid rgba(255,255,255,0.5);
 }
 
@@ -175,9 +180,10 @@ h1 {
 }
 
 .ch-item-1:hover {
+  opacity: 1;
 	box-shadow:
-		inset 0 0 0 110px rgba(200,95,66, 0.4),
-		inset 0 0 0 16px rgba(255,255,255,0.8),
+  inset 0 0 0 110px rgba(0,0,0, 1),
+  inset 0 0 0 16px rgba(0,0,0,1),
 		0 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -192,9 +198,10 @@ h1 {
 }
 
 .ch-item-2:hover {
+    opacity: 1;
 	box-shadow:
-		inset 0 0 0 110px rgba(200,95,66, 0.4),
-		inset 0 0 0 16px rgba(255,255,255,0.8),
+  inset 0 0 0 110px rgba(0,0,0, 1),
+  inset 0 0 0 16px rgba(0,0,0,1),
 		0 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -208,10 +215,12 @@ h1 {
 	transform: scale(1);
 }
 
+/* change the color when hovering over the circle in rgba() */
 .ch-item-3:hover {
+    opacity: 1;
 	box-shadow:
-		inset 0 0 0 110px rgba(200,95,66, 0.4),
-		inset 0 0 0 16px rgba(255,255,255,0.8),
+		inset 0 0 0 110px rgba(0,0,0,1),
+		inset 0 0 0 16px rgba(0,0,0,1),
 		0 1px 2px rgba(0,0,0,0.1);
 }
 
