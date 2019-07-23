@@ -11,13 +11,13 @@
 
 
           <div class="container">
-            <div>
-            Which Color Did You Find Most Calming? <br>
-            Rate Each Color From One - Five!
+            <div id= question>
+      <strong>Please rate how calm the following colors make you on a 1 to 5 scale:
+      <br><center>1 = “I don’t feel calm." 5 = “I feel very calm.”</center></strong>
 
-            </div><br>
+    </div>
           <div class="column">
-            <p>Red: <span id="demo" class= "value"></span></p>
+            <p>Pink: <span id="demo" class= "value"></span></p>
             <input type="range" min="1" max="5" value="1" id="myRange" class="slider">
 
             <p>Green: <span id="demo2" class= "value"></span></p>
@@ -34,30 +34,31 @@
           </div>
 
           <div class="column">
-            <p>Comic Sans: <span id="demo6" class= "value"></span></p>
+            <p id="value1">Comic Sans: <span id="demo6" class= "value"></span></p>
             <input type="range" min="1" max="5" value="1" id="myRange6" class="slider">
 
-            <p>Ariel: <span id="demo7" class= "value"></span></p>
+            <p id="value2">Ariel: <span id="demo7" class= "value"></span></p>
             <input type="range" min="1" max="5" value="1" id="myRange7" class="slider">
 
-            <p>Times New Roman: <span id="demo8" class= "value"></span></p>
+            <p id="value3">Times New Roman: <span id="demo8" class= "value"></span></p>
             <input type="range" min="1" max="5" value="1" id="myRange8" class="slider">
 
-            <p>Impact: <span id="demo9" class= "value"></span></p>
+            <p id="value4">Impact: <span id="demo9" class= "value"></span></p>
             <input type="range" min="1" max="5" value="1" id="myRange9" class="slider">
 
-            <p>Century: <span id="demo10" class= "value"></span></p>
+            <p id="value5">Century: <span id="demo10" class= "value"></span></p>
             <input type="range" min="1" max="5" value="1" id="myRange10" class="slider">
-          </div>
+          </div><br><br>
             <link rel="stylesheet" type="text/css" href="sample.css">
 
 
           </div>
           <br><br>
 
-        <center>  <form action="sample.html">
+        <!-- <center>  <form action="sample.html">
               <input class="myButton" type="submit" value="Next Page" onclick= "Passvalue();"/>
-          </form> </center>
+          </form> </center> -->
+          <c onclick="window.location.href = 'sample.html';"><strong>Next Page</strong></c>
 
 
 
