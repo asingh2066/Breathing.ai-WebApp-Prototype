@@ -4,6 +4,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1{
+  font-size:60px;
+}
+
 
 .hero-image {
   background-image: url(../images/breathing.ai_Personalization.jpg);
