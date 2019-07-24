@@ -1,0 +1,961 @@
+/* main.html */
+
+body {
+  margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  font-size:60px;
+}
+
+
+.hero-image {
+  background-image: url(../images/breathing.ai_Personalization.jpg);
+  background-color: #cccccc;
+  height: 755px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.button_main{
+  position:absolute;
+  left:50%;
+  bottom:-40%;
+  transform: translate(-50%,-50%);
+  width:225px;
+  height:60px;
+  text-align: center;
+  line-height: 60px;
+  color:#fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+}
+.button_main:hover
+{
+  animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0%;
+  }
+  100%
+  {
+    background-position: 400%;
+  }
+
+}
+.button_main:before
+{
+  content: '';
+  position: absolute;
+  top:-5px;
+  left:-5px;
+  right:-5px;
+  bottom:-5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#f441a5,#ffeb3b,#03a9f4); /*#03a9f4 -- took out this color after 90deg*/
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.button_main:hover:before
+{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+
+/* Description.html */
+
+.description {
+  background-image: url(../images/descriptionback.png);
+  height: 755px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  position: absolute;
+  height: 400px;
+  width: 1100px;
+  top: 100px;
+  left: calc(35% - 325px);
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 450px;
+  width: 400px;
+  opacity: .95;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 1rem 0 11px #999;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: 20px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: grey;
+  font-weight: 300;
+  font-size: 24px;
+  position: absolute;
+  left: 40%;
+  top: -160px;
+}
+.text{
+  color: grey;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: "Avenir Next";
+  margin-left: 30px;
+  margin-right: 50px;
+  position: absolute;
+  left: 20px;
+  top: 268px;
+}
+
+.circle {
+  position: absolute;
+  top: -80px;
+  left: calc(25% - 60px);
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+.button_description{
+  position:absolute;
+  left:50%;
+  bottom:10%;
+  transform: translate(-50%,-50%);
+  width:225px;
+  height:60px;
+  text-align: center;
+  line-height: 60px;
+  color:#fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+}
+.button_description:hover
+{
+  animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0%;
+  }
+  100%
+  {
+    background-position: 400%;
+  }
+
+}
+.button_description:before
+{
+  content: '';
+  position: absolute;
+  top:-5px;
+  left:-5px;
+  right:-5px;
+  bottom:-5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#f441a5,#ffeb3b,#03a9f4); /*#03a9f4 -- took out this color after 90deg*/
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.button_description:hover:before
+{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+/* Camera.html */
+html, .body_camerademo {
+  width: 100%;
+  height: 100%
+}
+.body_camerademo{
+  background-image: url(../images/breathing.ai_personalization_of_screens.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.camerah1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  height: 50px;
+  margin: 140px 0 0 -220px;
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: Arial;
+  font-size: 40px;
+  color: #FFF;
+}
+
+video {
+  /* border: 1px solid #eee; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: fill;
+}
+
+.button_camerademo{
+  position:absolute;
+  left:50%;
+  bottom:10%;
+  transform: translate(-50%,-50%);
+  width:225px;
+  height:60px;
+  text-align: center;
+  line-height: 60px;
+  color:#fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+}
+.button_camerademo:hover
+{
+  animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0%;
+  }
+  100%
+  {
+    background-position: 400%;
+  }
+
+}
+.button_camerademo:before
+{
+  content: '';
+  position: absolute;
+  top:-5px;
+  left:-5px;
+  right:-5px;
+  bottom:-5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#f441a5,#ffeb3b,#03a9f4); /*#03a9f4 -- took out this color after 90deg*/
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.button_camerademo:hover:before
+{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+/* transition.html */
+.body_transition{
+  background-color:#989898;
+}
+
+.h3_transition{
+  color:white;
+  font-family: Inconsolata, monospace;
+  text-align: center;
+  margin-top:-20px;
+  letter-spacing:2px;
+
+}
+.container_transition{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.svg{
+transform:translate(39%,30%);
+}
+
+.top{
+  transform-origin: 10% 15%;
+   animation: scale2 3s ease infinite;
+}
+.bottom{
+   animation: scale2 3s ease infinite;
+  transform-origin: 10% 35%;
+}
+@keyframes scale2 {
+  70%{ transform:scale(1.2)
+  }
+}
+svg{
+  transform-origin: 10% 19%;
+  animation: rotate 3s linear infinite;
+  overflow: visible;
+  width: 400px;
+}
+@keyframes rotate {
+  to{transform:rotate(360deg);}
+}
+ .first-left{
+  animation: scale 3s ease infinite;
+ transform-origin: 5% 25%;
+}
+@keyframes scale {
+  33%{ transform:scale(1.3)
+  }
+}
+.center{
+  animation: scale1 3s ease infinite;
+ transform-origin: 10% 25%;
+}
+@keyframes scale1 {
+   33%{ transform:scale(1)
+  }
+  63%{ transform:scale(1.4)
+  }
+}
+.first-right{
+  animation: scale 4s ease infinite;
+ transform-origin: 10% 25%;
+}
+@keyframes scale3 {
+   33%{ transform:scale(1)
+  }
+  63%{ transform:scale(1)
+  }
+    65%{ transform:scale(1.6)
+  }
+}
+/* WordFont.html */
+
+*{
+  box-sizing: border-box;
+}
+
+%_opensans__base{
+  font-family: opensans;
+}
+%_sans__base{
+  font-family: sans;
+}
+%_impact__base{
+  font-family: Impact, opensans;
+}
+%_comic__base{
+  font-family: "Comic Sans MS", cursive;
+}
+%_mono__base{
+  font-family: monospace;
+}
+%_arial__base{
+  font-family:"Arial", Gadget, sans-serif;
+}
+
+.random{
+  width: 900px;
+  height: auto;
+  padding: 40px;
+  margin: 0 auto;
+  font-size: 180px;
+  text-align: center;
+}
+  &__item{
+    width: 25%;
+    float: left;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .font__1{
+    @extend %_opensans__base;
+    font-weight: normal;
+  }
+  .font__2{
+    @extend %_opensans__base;
+    font-weight: bolder;
+  }
+  .font__3{
+    @extend %_impact__base;
+  }
+  .font__4{
+    @extend %_comic__base;
+  }
+  .font__5{
+    @extend %_mono__base;
+  }
+  .font__6{
+    @extend %_mono__base;
+    font-weight: bolder;
+  }
+  .font__7{
+    @extend %_arial__base;
+    font-weight: 200;
+  }
+  .font__8{
+    @extend %_arial__base;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+.console{
+  float:left;
+  width: calc(100%/8);
+  text-align: center;
+  padding: 5px;
+}
+
+/* samplePre.html */
+.body_samplepre{
+  margin: 0;
+  padding: 0;
+  background: url(../images/analysis_page_background.png);
+  background-size: cover;
+  background-position: absolute;
+  font-family: 'Roboto', sans-serif;
+}
+
+.transparent-box{
+  width:1000px;
+  height:600px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top:50%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+
+
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 7px;
+  border-radius: 5px;
+  background: #bdc3c7;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.p_samplepre {
+  text-align: left;
+  margin-left: 25%;
+  letter-spacing: normal;
+  font-size: 18px;
+}
+
+#question{
+  font-size: 25px;
+  text-align: left;
+  padding-top:.4%;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+   -webkit-appearance: none;
+  background-color: #e74c3c;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.container_samplepre:after{
+  padding: 10px 10px 10px 10px;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container_samplepre{
+    padding: 20px 20px 20px 20px;
+    margin-left: 7%;
+    margin-right:-5%;
+}
+
+#myRange::-webkit-slider-thumb{
+  background: #FF00FF;
+}
+
+#myRange2::-webkit-slider-thumb{
+  background: #00FF00;
+}
+
+#myRange3::-webkit-slider-thumb{
+  background: #0000FF;
+}
+
+#myRange4::-webkit-slider-thumb{
+  background: #999999;
+}
+
+#myRange5::-webkit-slider-thumb{
+  background: #FFFF00;
+}
+
+#myRange6::-webkit-slider-thumb{
+  background: #999;
+}
+
+#myRange7::-webkit-slider-thumb{
+  background: #999;
+}
+
+#myRange8::-webkit-slider-thumb{
+  background: #999;
+}
+
+#myRange9::-webkit-slider-thumb{
+  background: #999;
+}
+
+#myRange10::-webkit-slider-thumb{
+  background: #999;
+}
+
+.column_samplepre {
+  float: left;
+  width: 45%;
+  padding: 20px;
+  height: 300px;
+}
+
+.button_samplepre{
+  position:absolute;
+  left:50%;
+  bottom:-1%;
+  transform: translate(-50%,-50%);
+  width:225px;
+  height:60px;
+  text-align: center;
+  line-height: 60px;
+  color:#fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+}
+.button_samplepre:hover
+{
+  animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0%;
+  }
+  100%
+  {
+    background-position: 400%;
+  }
+
+}
+.button_samplepre:before
+{
+  content: '';
+  position: absolute;
+  top:-5px;
+  left:-5px;
+  right:-5px;
+  bottom:-5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#f441a5,#ffeb3b,#03a9f4); /*#03a9f4 -- took out this color after 90deg*/
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.button_samplepre:hover:before
+{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+#value1{
+ font-family: "Comic Sans MS", sans-serif;
+ font-size: 18px;
+}
+
+#value2{
+ font-family: Arial, sans-serif;
+ font-size: 18px;
+}
+
+#value3{
+font-family: Times;
+font-size: 18px;
+}
+
+#value4{
+font-family: Impact, sans-serif;
+font-size: 18px;
+}
+
+#value5{
+font-family: "New Century";
+font-size: 18px;
+}
+
+/* surveyfirebase.html */
+
+*{
+  box-sizing: border-box;
+}
+
+.body_surveyfirebase{
+  background:white;
+  color:#485e74;
+  ne-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:1em;
+}
+
+.container_surveyfirebase{
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+}
+
+.brand{
+  text-align: center;
+  font-size: 20px;
+}
+
+.brand span{
+  color:#fff;
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.contact{
+  background:#f9feff;
+}
+
+/* FORM STYLES */
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
+.contact form label{
+  display:block;
+}
+
+.contact form p{
+  margin:0;
+}
+
+.contact form .full{
+  grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea, .contact form select{
+  width:100%;
+  padding:1em;
+  border:1px solid #c9e6ff;
+}
+
+.contact form button{
+  background:#c9e6ff;
+  border:0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background:#92bde7;
+  color:#fff;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+
+  .wrapper > *{
+    padding:2em;
+  }
+
+.brand{
+    text-align: left;
+  }
+}
+
+.candy {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.container_surveyfirebase:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card_surveyfirebase{
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../images/results.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color:black;
+  width: 600px;
+  height: 550px;
+  filter: blur(10px);
+  border-color: black;
+}
+
+#blue, #red, #green, #grey, #yellow, #none{
+  width:5%;
+}
+
+
+/* sample.html */
+/* @import url('https://fonts.googleapis.com/css?family=Oswald'); */
+
+.body_sample{
+  margin: 0;
+  padding: 0;
+  background: url(../images/analysis_page_background.png);
+  background-size: cover;
+  background-position: absolute;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card_sample{
+  width:1000px;
+  height:600px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top:50%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+* {box-sizing: border-box}
+.body_sample {font-family: 'Roboto', sans-serif;}
+
+.tablinks{
+  font-family: 'Roboto', sans-serif;
+  height: 120px;
+}
+
+
+.tablinks:nth-child(2){
+
+}
+
+/* Style the tab */
+.tab {
+  position: relative;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 30%;
+  height: 300px;
+  margin-top: 12%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #fff;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #fff;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Style the tab content */
+.tabcontent {
+  position: relative;
+  float: left;
+  padding: 0px 12px;
+  width: 65%;
+  border-left: none;
+  height: 360px;
+  display: none;
+  margin-top: 10%;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {box-sizing: border-box}
+
+.container_sample {
+  width: 100%;
+  background-color: #e6e6e6;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 25px 25px 25px 25px;
+
+
+}
+
+.html {width: 90%; background-color: #00FF00;}
+.css {width: 80%; background-color: #999999;}
+.js {width: 65%; background-color: #FF00FF;}
+.php {width: 60%; background-color: #0000FF;}
+.yellow {width: 85%; background-color: #FF0000; color: black;}
+.font1 {width: 75%; background-color: #4EDE3E; color: black;}
+.font2 {width: 65%; background-color: #4EDE3E; color: black;}
+.font3 {width: 70%; background-color: #4EDE3E; color: black;}
+.font4 {width: 80%; background-color: #4EDE3E; color: black;}
+.font5{width: 60%; background-color: #4EDE3E; color: black;}
+
+.column_sample {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 300px;
+}
+
+/* Clear floats after the columns */
+.row_sample:after {
+  content: "";
+  display: table;
+  clear: both;
+}

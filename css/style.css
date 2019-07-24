@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css?family=Oswald'); */
 
-body{
+.body_sample{
   margin: 0;
   padding: 0;
   background: url(../images/analysis_page_background.png);
@@ -9,7 +9,7 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-.card{
+.card_sample{
   width:1000px;
   height:600px;
   background: rgba(0, 0, 0, 0.5);
@@ -22,11 +22,8 @@ body{
   border-radius: 25px;
 }
 
-
-/////////////
-
 * {box-sizing: border-box}
-body {font-family: 'Roboto', sans-serif;}
+.body_sample {font-family: 'Roboto', sans-serif;}
 
 .tablinks{
   font-family: 'Roboto', sans-serif;
@@ -93,7 +90,7 @@ body {font-family: 'Roboto', sans-serif;}
 
 * {box-sizing: border-box}
 
-.container {
+.container_sample {
   width: 100%;
   background-color: #e6e6e6;
   border-radius: 25px 25px 25px 25px;
@@ -120,7 +117,7 @@ body {font-family: 'Roboto', sans-serif;}
 .font4 {width: 80%; background-color: #4EDE3E; color: black;}
 .font5{width: 60%; background-color: #4EDE3E; color: black;}
 
-.column {
+.column_sample {
   float: left;
   width: 50%;
   padding: 20px;
@@ -128,7 +125,7 @@ body {font-family: 'Roboto', sans-serif;}
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row_sample:after {
   content: "";
   display: table;
   clear: both;

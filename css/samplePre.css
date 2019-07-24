@@ -1,4 +1,4 @@
-body{
+.body_samplepre{
   margin: 0;
   padding: 0;
   background: url(../images/analysis_page_background.png);
@@ -34,7 +34,7 @@ body{
   transition: opacity .2s;
 }
 
-p {
+.p_samplepre {
   text-align: left;
   margin-left: 25%;
   letter-spacing: normal;
@@ -70,14 +70,14 @@ p {
   cursor: pointer;
 }
 
-.container:after{
+.container_samplepre:after{
   padding: 10px 10px 10px 10px;
   content: "";
   display: table;
   clear: both;
 }
 
-.container{
+.container_samplepre{
     padding: 20px 20px 20px 20px;
     margin-left: 7%;
     margin-right:3%;
@@ -123,17 +123,14 @@ p {
   background: #999;
 }
 
-
-
-
-.column {
+.column_samplepre {
   float: left;
   width: 45%;
   padding: 20px;
   height: 300px;
 }
 
-c{
+.button_samplepre{
   position:absolute;
   left:50%;
   bottom:-1%;
@@ -153,7 +150,7 @@ c{
   border-radius: 30px;
   z-index: 1;
 }
-c:hover
+.button_samplepre:hover
 {
   animation: animate 8s linear infinite;
 }
@@ -169,7 +166,7 @@ c:hover
   }
 
 }
-c:before
+.button_samplepre:before
 {
   content: '';
   position: absolute;
@@ -184,7 +181,7 @@ c:before
   opacity: 0;
   transition: 0.5s;
 }
-c:hover:before
+.button_samplepre:hover:before
 {
   filter: blur(20px);
   opacity: 1;

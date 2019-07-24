@@ -27,7 +27,7 @@ h1{
   transform: translate(-50%, -50%);
   color: white;
 }
-c{
+.button_main{
   position:absolute;
   left:50%;
   bottom:-40%;
@@ -47,7 +47,7 @@ c{
   border-radius: 30px;
   z-index: 1;
 }
-c:hover
+.button_main:hover
 {
   animation: animate 8s linear infinite;
 }
@@ -63,7 +63,7 @@ c:hover
   }
 
 }
-c:before
+.button_main:before
 {
   content: '';
   position: absolute;
@@ -78,7 +78,7 @@ c:before
   opacity: 0;
   transition: 0.5s;
 }
-c:hover:before
+.button_main:hover:before
 {
   filter: blur(20px);
   opacity: 1;

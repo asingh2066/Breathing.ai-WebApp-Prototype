@@ -1,4 +1,4 @@
-body {
+.description {
   background-image: url(../images/descriptionback.png);
   height: 755px;
   background-position: center;
@@ -79,7 +79,7 @@ body {
 }
 
 
-c{
+.button_description{
   position:absolute;
   left:50%;
   bottom:10%;
@@ -99,7 +99,7 @@ c{
   border-radius: 30px;
   z-index: 1;
 }
-c:hover
+.button_description:hover
 {
   animation: animate 8s linear infinite;
 }
@@ -115,7 +115,7 @@ c:hover
   }
 
 }
-c:before
+.button_description:before
 {
   content: '';
   position: absolute;
@@ -130,7 +130,7 @@ c:before
   opacity: 0;
   transition: 0.5s;
 }
-c:hover:before
+.button_description:hover:before
 {
   filter: blur(20px);
   opacity: 1;
